@@ -1,0 +1,12 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.container {
+    min-width: $desktop;
+    max-width: 1200px;
+    margin: 0 auto;
+}
