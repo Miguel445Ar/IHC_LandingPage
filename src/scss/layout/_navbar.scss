@@ -1,17 +1,53 @@
+// NavBar basics
 .header {
     width: 100%;
-    border: 1px solid #000;
+    padding: 1.5rem 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     .header__nav {
+        width: 40rem;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        a {
+        @include tablet {
+            display: none;
+        }
+        .header__nav__link {
             display: block;
+            width: 8rem;
             text-decoration: none;
             color: $black;
+            font-family: $sans;
+            font-size: 1.8rem;
+            padding: 2.5rem 0;
+            color: $lightBlue;
+            transition: all 300ms;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
+    }
+}
+
+.header__logo {
+    display: block;
+    .header__logo__img {
+        width: 100%;
+        border-radius: 2rem;
+    }
+}
+
+.header__button {
+    margin: 1rem;
+    width: 14rem;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-family: $sans;
+    font-size: 2rem;
+    &:hover {
+        box-shadow: 2px 2px 2px rgb(134, 119, 119);
+        cursor: pointer;
     }
 }
