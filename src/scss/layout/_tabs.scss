@@ -1,0 +1,17 @@
+.disabled {
+    display: none;
+}
+.animation{
+    animation: init 300ms linear 0s 1 normal;
+}
+@keyframes init {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
