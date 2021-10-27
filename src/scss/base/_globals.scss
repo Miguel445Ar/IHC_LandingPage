@@ -1,0 +1,14 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.container {
+    width: 100%;
+    padding: 0 20rem;
+}
+p {
+    font-family: $sans;
+}
