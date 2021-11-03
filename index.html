@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,300;0,400;1,100;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Finansy</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#" class="header__logo">
+                <img src="./img/logoFinansy.png" alt="Logo de Finansy" class="header__logo__img">
+                <p class="header__logo__text">Finansy</p>
+            </a>
+            <nav class="header__nav">
+                <a href="#Home" class="header__nav__link">Inicio</a>
+                <a href="#Empresa" class="header__nav__link">Empresa</a>
+                <a href="#Nosotros" class="header__nav__link">Nosotros</a>
+                <a href="#Servicios" class="header__nav__link">Servicios</a>
+                <a href="#Contacto" class="header__nav__link">Contacto</a>
+            </nav>
+            <img src="./img/linesIcon.png" alt="Lines" class="header__lines">
+        </header>
+        <nav class="mobileNav">
+            <a href="#Home" class="mobileNav__link">
+                <div class="linkContainer">
+                    <img src="./img/homeIcon.png" alt="Inicio" class="mobileNavIcon">Inicio
+                </div>
+            </a>
+            <a href="#Empresa" class="mobileNav__link">
+                <div class="linkContainer">
+                    <img src="./img/logoFinansy.png" alt="Inicio" class="mobileNavIcon">Empresa
+                </div>
+            </a>
+            <a href="#Nosotros" class="mobileNav__link">
+                <div class="linkContainer">
+                    <img src="./img/nosotrosIcono.png" alt="Inicio" class="mobileNavIcon">Nosotros
+                </div>
+            </a>
+            <a href="#Servicios" class="mobileNav__link">
+                <div class="linkContainer">
+                    <img src="./img/serviciosIcono.png" alt="Inicio" class="mobileNavIcon">Servicios
+                </div>
+            </a>
+            <a href="#Contacto" class="mobileNav__link">
+                <div class="linkContainer">
+                    <img src="./img/contactoIcono.png" alt="Inicio" class="mobileNavIcon">Contacto
+                </div>
+            </a>
+            <a href="#" id="closeNav" class="mobileNav__link">X</a>
+        </nav>
+        <section id="Home" class="Home">
+            <div class="Home__phrase">
+                <div class="Home__phrase__img"></div>
+                <p class="Home__phrase__text">
+                    Retoma el control de tus finanzas y dale un respiro a tu vida
+                    <button type="button" class="Home__phrase__button">Regístrate ya</button>
+                </p>
+            </div>
+            <div class="Home__banner"></div>
+        </section>
+        <section id="Empresa" class="disabled">
+            Empresa
+        </section>
+        <section id="Nosotros" class="disabled">
+            Nosotros
+        </section>
+        <section id="Servicios" class="disabled">
+            Servicios
+        </section>
+        <section id="Contacto" class="disabled">
+            Contacto
+        </section>
+    </div>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
