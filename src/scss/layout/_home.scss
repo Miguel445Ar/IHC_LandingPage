@@ -1,0 +1,72 @@
+.Home {
+    width: 100%;
+    background-color: $homeBackground;
+    height: auto;
+    padding: 0 20rem;
+    @include desktop {
+        padding: 0 10rem;
+    }
+}
+.Home__phrase {
+    width: 100%;
+    height: 40rem;
+    padding: 5rem 0;
+    @include desktop {
+        height: 28rem;
+    }
+    @include tablet {
+        height: 50rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: calc(75% - 5%) calc(25% - 5%);
+        grid-column: 5%;
+    }
+    .Home__phrase__img {
+        display: block;
+        width: 30rem;
+        background-image: url("../img/moneyTree.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        flex-basis: 35%;
+        flex-grow: 1;
+        flex-shrink: 2;
+        @include tablet {
+            width: 100%;
+        }
+    }
+    .Home__phrase__text {
+        font-family: $sans;
+        font-size: 3rem;
+        text-align: center;
+        flex-basis: 65%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        @include desktop {
+            font-size: 2.5rem;
+        }
+        .Home__phrase__button {
+            display: block;
+            font-family: $sans;
+            background-color: $orange;
+            border: none;
+            font-size: 1.5rem;
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            margin-top: 5rem;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+    }
+    display: flex;
+    flex-flow: row wrap;
+}
+
+// Banner 1
+.Home__banner {
+    width: 100%;
+    height: 20rem;
+    background-image: url("../img/banner1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

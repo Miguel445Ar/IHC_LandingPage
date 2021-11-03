@@ -7,8 +7,4 @@ html {
 }
 .container {
     width: 100%;
-    padding: 0 20rem;
-    @include desktop {
-        padding: 0 10rem;
-    }
 }
