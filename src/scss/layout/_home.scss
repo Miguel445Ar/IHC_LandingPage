@@ -6,6 +6,12 @@
     @include desktop {
         padding: 0 10rem;
     }
+    @include tablet {
+        padding: 0 5rem;
+    }
+    @include tablet {
+        padding: 0 3rem;
+    }
 }
 .Home__phrase {
     width: 100%;
@@ -20,6 +26,9 @@
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: calc(75% - 5%) calc(25% - 5%);
         grid-column: 5%;
+    }
+    @include mobile {
+        height: 70rem;
     }
     .Home__phrase__img {
         display: block;
@@ -36,7 +45,7 @@
     }
     .Home__phrase__text {
         font-family: $sans;
-        font-size: 3rem;
+        font-size: 4rem;
         text-align: center;
         flex-basis: 65%;
         flex-grow: 1;
@@ -69,4 +78,10 @@
     background-image: url("../img/banner1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    @include tablet {
+        margin-top: 3rem;
+    }
+    @include mobile {
+        height: 10rem;       
+    }
 }

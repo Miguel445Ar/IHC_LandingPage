@@ -1,0 +1,112 @@
+.Home__Promotion {
+    display: grid;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    grid-template-columns: repeat(3,30%);
+    overflow: hidden;
+    column-gap: 5%;
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        grid-template-rows: repeat(2,calc(50% - (5%/2)));
+        row-gap: 5%;
+        column-gap: 10%;
+        height: 60rem;
+    }
+    @include mobile {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 40% 25% 25%;
+        row-gap: 5%;
+        margin: 0;
+    }
+    .Home__Promotion__mobileApp {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        & > img {
+            display: block;
+            width: 100%;
+            align-self: center;
+            @include tablet {
+                width: 100%;
+                display: block;
+                align-self: unset;
+                justify-self: center;
+                height: 100%;
+            }
+            @include mobile {
+                width: 15rem;
+                justify-self: center;
+                align-self: unset;
+                height: 22rem;
+            }
+        }
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        @include mobile {
+            grid-row: unset;
+            grid-column: unset;
+        }
+    }
+    .Home__Promotion__msg {
+        font-family: $sans;
+        font-size: 3rem;
+        align-self: center;
+        padding: 2rem;
+        background-color: $orange;
+        border-radius: 1.5rem;
+        @include tablet {
+            align-self: unset;
+            font-size: 2.5rem;
+        }
+        @include mobile {
+            align-self: unset;
+            font-size: 1.8rem;
+            text-align: justify;
+        }
+    }
+}
+.Home__Promotion__opc {
+    display: flex;
+    flex-flow: column gap;
+    justify-content: space-around;
+    @include tablet {
+        margin: 0;
+    }
+    margin: 20rem 0;
+}
+.Home__Promotion__opc__item {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .Home__Promotion__opc__item__img {
+        display: block;
+        align-self: center;
+        justify-self: start;
+    }
+    .Home__Promotion__opc__item__text {
+        justify-self: center;
+        font-family: $sans;
+        font-size: 2rem;
+        @include tablet {
+            justify-self: unset;
+        }
+    }
+}
+
+.Home__msg {
+    font-family: $sans;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(138, 131, 131);
+}
+.Home__map {
+    border: none;
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    @include mobile {
+        height: 25rem;
+    }
+}

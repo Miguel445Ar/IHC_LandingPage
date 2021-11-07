@@ -48,6 +48,7 @@ function showingSections(e){
         setTimeout(()=>{
             section.classList.remove('animation');
         },300);
+        closeNavEvent();
     }
 }
 function disableSections(exception){
