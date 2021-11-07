@@ -1,0 +1,105 @@
+// Second Part of Home Section
+.Home__benefits {
+    padding: 2rem 0;
+    .Home__benefits__block {
+        width: 100%;
+        display: flex;
+        padding: 2rem 0;
+        justify-content: space-between;
+        @include mobile {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 45% 45%;
+            row-gap: 10%;
+        }
+        .Home__benefits__block__img {
+            display: block;
+            width: 45%;
+            border-radius: 1rem;
+            flex-shrink: 1;
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .Home__benefits__block__text {
+            font-family: $sans;
+            font-size: 4rem;
+            width: 50%;
+            align-self: center;
+            text-align: center;
+            flex-shrink: 4;
+            @include tablet {
+                font-size: 3rem;
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+}
+// Second Banner (Tranding)
+.Home__bannerTrading {
+    width: 100%;
+    height: 20rem;
+    background-image: url("../img/trading.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3rem;
+    @include mobile {
+        height: 10rem;
+    }
+}
+// Stories
+
+.Home__stories {
+    width: 100%;
+    height: 65rem;
+    .Home__stories__title {
+        font-family: $sans;
+        font-size: 4rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    @include mobile {
+        height: 60rem;
+    }
+}
+.Home__stories__block {
+    display: grid;
+    grid-template-columns: repeat1(1,1fr);
+    grid-template-rows: 30% 30% 30%;
+    row-gap: 10%;
+    .Home__stories__block__item {
+        .Home__stories__block__item__img {
+            display: block;
+            width: 15rem;
+            align-self: center;
+            justify-self: center;
+            @include mobile {
+                width: 8rem;
+                align-self: none;
+                justify-self: none;
+            }
+        }
+        .Home__stories__block__item__text {
+            font-family: $vietnam;
+            font-size: 2rem;
+            align-self: center;
+            text-align: justify;
+            @include mobile {
+                font-size: 1.2rem;
+                margin: 0;
+                align-self: none;
+            }
+        }
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        grid-column: 10%;
+        @include mobile {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 60% 30%;
+            row-gap: 2rem;
+        }
+    }
+}
