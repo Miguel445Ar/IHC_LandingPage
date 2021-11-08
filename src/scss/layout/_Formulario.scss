@@ -1,0 +1,89 @@
+.Contacto {
+    width: 100%;
+    background-color: $homeBackground;
+    height: 72vh;
+    padding: 0 20rem;
+    @include desktop {
+        padding: 0 10rem;
+    }
+    @include desktop2 {
+        padding: 0 10rem;
+    }
+    @include tablet {
+        padding: 0 5rem;
+        height: 120rem;
+    }
+    @include mobile {
+        padding: 0 3rem;
+    }
+}
+.Contacto__title {
+    font-family: $sans;
+    font-size: 5rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+.Contacto__section {
+    height: 100%;
+    padding-bottom: 3rem;
+    .Contacto__section__img {
+        display: block;
+        width: 50%;
+        justify-self: center;
+        transform: translateY(50%);
+        @include tablet {
+            transform: none;
+            align-self: center;
+        }
+    }
+    .Contacto__section__block {
+        text-align: center;
+        & > span {
+            display: inline-block;
+            text-decoration: none;
+            font-family: $vietnam;
+            font-size: 2rem;
+            transform: translateY(-50%) translateX(20%);
+            cursor: pointer;
+            @include mobile {
+                transform: translateY(-50%) translateX(5%);
+            }
+        }
+    }
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    column-gap: 10%;
+    @include tablet {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 30% 60%;
+        row-gap: 10%;
+    }
+}
+
+.Contacto__section__block__form {
+    display: grid;
+    width: 100%;
+    height: 70%;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 5% 15% 5% 50% 10%;
+    row-gap: 2.5%;
+    & > label {
+        font-size: 2rem;
+        font-family: $sans;
+        text-align-last: left;
+    }
+    & input {
+        width: 100%;
+        font-size: 2rem;
+    }
+    & > button {
+        font-size: 2rem;
+    }
+}
+
+.Contacto__section__block__img {
+    display: inline-block;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem $lightBlue;
+    cursor: pointer;
+}
