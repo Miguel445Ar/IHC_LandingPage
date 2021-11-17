@@ -1,10 +1,12 @@
-const links = document.querySelector('.header__nav');
+const links = document.querySelectorAll('.header__nav');
 const sections = document.querySelectorAll('.container > section');
 export function init(){
     eventToLinks();
 }
 function eventToLinks(){
-    links.addEventListener('click',clickOnTab);
+    for(let l of links){
+        l.addEventListener('click',clickOnTab);
+    }
 }
 function disableSections(exception){
     for(let i = 0; i<sections.length;++i){

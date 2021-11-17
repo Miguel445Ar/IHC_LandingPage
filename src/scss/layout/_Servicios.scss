@@ -15,6 +15,7 @@
     }
     @include mobile {
         padding: 0 3rem;
+        height: 220rem;
     }
 }
 .Servicios__section {
@@ -85,7 +86,7 @@
         }
         @include mobile {
             width: 20rem;
-            height: 70%;
+            height: 50%;
             justify-self: center;
         }
     }
@@ -93,6 +94,12 @@
         font-family: $sans;
         font-size: 2.5rem;
         border-radius: 2rem;
+        @include mobile {
+            margin-top: 2rem;
+        }
+        @include miniMobile {
+            font-size: 2rem;
+        }
     }
     .Servicios__card__text {
         font-family: $sans;
@@ -103,12 +110,15 @@
         background-color: #fff;
         box-shadow: 0.2rem 0.2rem 0.2rem #888;
         line-height: 1.5;
+        @include desktop {
+            font-size: 1.955rem;
+        }
         @include mobile {
             line-height: 1.4;
             font-size: 1.8rem;
         }
-        @include desktop {
-            font-size: 1.955rem;
+        @include miniMobile {
+            font-size: 1.5rem;
         }
     }
     display: grid;
